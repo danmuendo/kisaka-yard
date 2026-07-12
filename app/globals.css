@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --color-charcoal: #211d17;
+  --color-charcoal-2: #2b261e;
+  --color-sawdust: #f1ead8;
+  --color-sawdust-2: #e7ddc4;
+  --color-walnut: #5a3a24;
+  --color-brass: #a8823c;
+  --color-brass-light: #c9a869;
+  --color-moss: #55624a;
+  --color-ink: #1a1712;
+  --color-rust: #8c4a34;
+}
+
+@theme inline {
+  --color-charcoal: var(--color-charcoal);
+  --color-charcoal-2: var(--color-charcoal-2);
+  --color-sawdust: var(--color-sawdust);
+  --color-sawdust-2: var(--color-sawdust-2);
+  --color-walnut: var(--color-walnut);
+  --color-brass: var(--color-brass);
+  --color-brass-light: var(--color-brass-light);
+  --color-moss: var(--color-moss);
+  --color-ink: var(--color-ink);
+  --color-rust: var(--color-rust);
+  --font-display: Georgia, "Times New Roman", ui-serif, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+body {
+  background: var(--color-sawdust);
+  color: var(--color-ink);
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+/* Dimension-line signature motif: a tick + arrow rule used as a divider */
+.dim-rule {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-walnut);
+}
+.dim-rule::before,
+.dim-rule::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+}
+
+.grain-noise {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.015) 0px,
+    rgba(0, 0, 0, 0.015) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
