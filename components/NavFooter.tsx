@@ -35,7 +35,7 @@ export function NavBar() {
             <line x1="6.5" y1="12" x2="15.5" y2="12" stroke="currentColor" strokeWidth="1.6" />
           </svg>
           <span className="font-display text-lg tracking-tight group-hover:text-brass-light transition-colors">
-            Your Carpentry Yard
+            Isabera Yard
           </span>
         </Link>
 
@@ -114,7 +114,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-12 grid gap-10 lg:grid-cols-[1.2fr_0.8fr_1fr] font-mono text-[12px]">
         <div>
           <p className="font-display text-lg text-sawdust mb-2 tracking-tight">
-            Your Carpentry Yard
+            Isabera Yard
           </p>
           <p className="leading-relaxed">
             Custom furniture, decks and outdoor structures, and framing.
@@ -125,9 +125,9 @@ export function Footer() {
         <div>
           <p className="uppercase tracking-[0.2em] text-brass-light mb-2">Service area</p>
           <p className="leading-relaxed">
-            Your Town
+            Kiunduani Town
             <br />
-            and surrounding areas
+            along Mombasa Road
           </p>
         </div>
         <div>
@@ -148,11 +148,11 @@ export function Footer() {
               WhatsApp
             </a>
           </div>
-          <p className="leading-relaxed">hello@yourcarpentryyard.co.ke</p>
+          <p className="leading-relaxed">hello@isaberayard.co.ke</p>
         </div>
       </div>
       <div className="border-t border-sawdust/10 px-6 py-4 text-center text-[11px] tracking-wide">
-        © {new Date().getFullYear()} Your Carpentry Yard. Built to measure.
+        © {new Date().getFullYear()} Isabera Yard. Built to measure.
       </div>
     </footer>
   );

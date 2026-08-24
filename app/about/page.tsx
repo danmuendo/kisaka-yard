@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — Your Carpentry Yard",
+  title: "About — Isabera Yard",
   description:
     "Learn more about our carpentry yard, team, and approach to building furniture, decks, and structural carpentry.",
 };

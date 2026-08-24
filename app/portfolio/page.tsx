@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Your Carpentry Yard",
+  title: "Portfolio — Isabera Yard",
   description:
     "Before and after projects from our carpentry yard: furniture, decks, and framing work.",
 };

@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: "Yard Contact <onboarding@resend.dev>",
-      to: ["hello@yourcarpentryyard.co.ke"],
+      to: ["hello@isaberayard.co.ke"],
       subject: `New contact request — ${service || "General enquiry"}`,
       replyTo: email,
       html: `

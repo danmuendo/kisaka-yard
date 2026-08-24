@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Your Carpentry Yard",
+  title: "Contact — Isabera Yard",
   description:
     "Get in touch for quotes, questions, or project advice.",
 };
@@ -48,10 +48,10 @@ export default function ContactPage() {
                 Email
               </span>
               <a
-                href="mailto:hello@yourcarpentryyard.co.ke"
+                href="mailto:hello@isaberayard.co.ke"
                 className="text-body hover:text-brass transition-colors"
               >
-                hello@yourcarpentryyard.co.ke
+                hello@isaberayard.co.ke
               </a>
             </p>
           </div>

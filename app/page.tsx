@@ -15,7 +15,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-6 py-16 flex items-center min-h-[calc(100vh-4rem)]">
           <div className="max-w-2xl">
             <p className="font-mono text-[12px] uppercase tracking-[0.25em] text-brass-light mb-5">
-              Your Carpentry Yard · Your Town
+              Isabera Yard · Kiunduani Town, Mombasa Road
             </p>
             <h1 className="font-display text-5xl sm:text-7xl leading-[1.02] tracking-tight mb-6">
               Built to measure, built to last.

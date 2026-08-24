@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Hammer, Trees, Ruler } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Services — Your Carpentry Yard",
+  title: "Services — Isabera Yard",
   description:
     "Custom furniture, decks and outdoor structures, and framing/construction services built to last.",
 };
