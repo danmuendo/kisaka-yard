@@ -5,14 +5,14 @@ import { DimDivider } from "@/components/DimDivider";
 export default function Home() {
   return (
     <main>
-      <section className="relative min-h-[calc(100vh-4rem)] bg-charcoal text-sawdust overflow-hidden">
+      <section className="relative min-h-screen bg-charcoal text-sawdust overflow-hidden pt-16">
         <img
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80"
           alt="Carpentry workshop"
           className="absolute inset-0 w-full h-full object-cover opacity-55"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/75 to-charcoal/20" />
-        <div className="relative max-w-6xl mx-auto px-6 min-h-[calc(100vh-4rem)] py-16 flex items-center">
+        <div className="relative max-w-6xl mx-auto px-6 py-16 flex items-center min-h-[calc(100vh-4rem)]">
           <div className="max-w-2xl">
             <p className="font-mono text-[12px] uppercase tracking-[0.25em] text-brass-light mb-5">
               Your Carpentry Yard · Your Town
