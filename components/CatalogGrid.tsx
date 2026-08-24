@@ -36,9 +36,9 @@ export function CatalogGrid() {
           <Link
             key={p.slug}
             href={`/product/${p.slug}`}
-            className="group border border-walnut/15 bg-sawdust-2/50 hover:border-brass transition-colors rounded-sm overflow-hidden"
+            className="group border border-strong bg-sawdust-2/50 hover:border-brass transition-colors rounded-sm overflow-hidden"
           >
-            <div className="relative aspect-[4/3] bg-charcoal/[0.04] flex items-center justify-center text-walnut/60 group-hover:text-brass transition-colors overflow-hidden">
+            <div className="relative aspect-[4/3] bg-charcoal/[0.04] flex items-center justify-center text-walnut group-hover:text-brass transition-colors overflow-hidden">
               {p.photo ? (
                 <Image
                   src={p.photo}
@@ -68,7 +68,7 @@ export function CatalogGrid() {
               <h3 className="font-display text-2xl leading-tight mb-2 group-hover:text-rust transition-colors">
                 {p.name}
               </h3>
-              <p className="text-sm text-walnut/65 mb-4">{p.wood}</p>
+              <p className="text-sm text-body mb-4">{p.wood}</p>
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <DimTag width={p.width} depth={p.depth} height={p.height} />
                 <span className="font-mono text-sm text-walnut font-semibold">

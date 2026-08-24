@@ -47,13 +47,13 @@ export function QuoteForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-walnut/60 mb-1.5">
+        <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-muted mb-1.5">
           Which piece?
         </label>
         <select
           value={form.product_slug}
           onChange={(e) => setForm({ ...form, product_slug: e.target.value })}
-          className="w-full border border-walnut/25 bg-transparent rounded-sm px-3 py-2.5 font-body focus:outline-none focus:border-brass"
+          className="w-full border border-strong bg-transparent rounded-sm px-3 py-2.5 font-body focus:outline-none focus:border-brass"
         >
           <option value="">Something custom / not listed</option>
           {products.map((p) => (
@@ -66,18 +66,18 @@ export function QuoteForm() {
 
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
-          <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-walnut/60 mb-1.5">
+          <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-muted mb-1.5">
             Your name
           </label>
           <input
             required
             value={form.customer_name}
             onChange={(e) => setForm({ ...form, customer_name: e.target.value })}
-            className="w-full border border-walnut/25 bg-transparent rounded-sm px-3 py-2.5 focus:outline-none focus:border-brass"
+            className="w-full border border-strong bg-transparent rounded-sm px-3 py-2.5 focus:outline-none focus:border-brass"
           />
         </div>
         <div>
-          <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-walnut/60 mb-1.5">
+          <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-muted mb-1.5">
             Phone
           </label>
           <input
@@ -86,32 +86,32 @@ export function QuoteForm() {
             value={form.phone}
             onChange={(e) => setForm({ ...form, phone: e.target.value })}
             placeholder="07xx xxx xxx"
-            className="w-full border border-walnut/25 bg-transparent rounded-sm px-3 py-2.5 focus:outline-none focus:border-brass"
+            className="w-full border border-strong bg-transparent rounded-sm px-3 py-2.5 focus:outline-none focus:border-brass"
           />
         </div>
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-walnut/60 mb-1.5">
+        <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-muted mb-1.5">
           Email (optional)
         </label>
         <input
           type="email"
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
-          className="w-full border border-walnut/25 bg-transparent rounded-sm px-3 py-2.5 focus:outline-none focus:border-brass"
+          className="w-full border border-strong bg-transparent rounded-sm px-3 py-2.5 focus:outline-none focus:border-brass"
         />
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-walnut/60 mb-1.5">
+        <label className="block font-mono text-[11px] uppercase tracking-[0.15em] text-muted mb-1.5">
           Details — dimensions, wood, colour, deadline
         </label>
         <textarea
           rows={4}
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
-          className="w-full border border-walnut/25 bg-transparent rounded-sm px-3 py-2.5 focus:outline-none focus:border-brass resize-none"
+          className="w-full border border-strong bg-transparent rounded-sm px-3 py-2.5 focus:outline-none focus:border-brass resize-none"
         />
       </div>
 
@@ -131,7 +131,7 @@ export function QuoteForm() {
         </button>
         <a
           href="https://wa.me/254723360384"
-          className="border border-walnut/25 text-walnut font-mono text-[13px] uppercase tracking-[0.15em] px-6 py-3.5 rounded-sm hover:border-brass hover:text-brass transition-colors"
+          className="border border-strong text-walnut font-mono text-[13px] uppercase tracking-[0.15em] px-6 py-3.5 rounded-sm hover:border-brass hover:text-brass transition-colors"
         >
           WhatsApp instead
         </a>

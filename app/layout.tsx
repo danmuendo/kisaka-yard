@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
 import { NavBar, Footer } from "@/components/NavFooter";
+import { localBusinessSchema } from "@/lib/schema";
 import "./globals.css";
 
-// Note: this sandbox can't reach fonts.googleapis.com, so font-family
-// fallback stacks are used here instead of next/font/google. Once deployed
-// to Vercel (which has open internet access), swap these for the real
-// Fraunces / Inter / IBM Plex Mono via next/font/google — see README.
-
 export const metadata: Metadata = {
-  title: "Kisaka Yard — Custom Tables, Sofa Sets & Furniture",
+  title: "Your Carpentry Yard — Custom Furniture, Decks & Framing",
   description:
-    "Handbuilt tables, sofa sets, beds and storage furniture, made to order at our carpentry yard.",
+    "General carpentry: custom furniture, decks and outdoor structures, and framing/construction. Made to measure, built to last.",
+  keywords: ["carpentry", "custom furniture", "decking", "framing", "construction", "carpenter"],
 };
 
 export default function RootLayout({
@@ -20,6 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body className="antialiased">
         <NavBar />
         {children}

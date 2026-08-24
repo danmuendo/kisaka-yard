@@ -25,11 +25,23 @@ export function NavBar() {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-7 font-mono text-[12px] uppercase tracking-[0.15em]">
-          <Link href="/#catalog" className="hover:text-brass-light transition-colors">
-            Catalog
+          <Link href="/" className="hover:text-brass-light transition-colors">
+            Home
+          </Link>
+          <Link href="/services" className="hover:text-brass-light transition-colors">
+            Services
+          </Link>
+          <Link href="/portfolio" className="hover:text-brass-light transition-colors">
+            Portfolio
+          </Link>
+          <Link href="/about" className="hover:text-brass-light transition-colors">
+            About
+          </Link>
+          <Link href="/contact" className="hover:text-brass-light transition-colors">
+            Contact
           </Link>
           <Link href="/quote" className="hover:text-brass-light transition-colors">
-            Request a Quote
+            Quote
           </Link>
           <a href={whatsappHref} className="hover:text-brass-light transition-colors">
             WhatsApp
@@ -38,7 +50,7 @@ export function NavBar() {
             href="/admin"
             className="text-charcoal bg-brass-light px-3 py-1.5 rounded-sm hover:bg-brass transition-colors"
           >
-            Yard Dashboard
+            Dashboard
           </Link>
         </nav>
         <div className="flex md:hidden items-center gap-2">

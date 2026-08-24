@@ -58,6 +58,18 @@ body {
   background: currentColor;
 }
 
+.text-body {
+  color: var(--color-ink);
+}
+
+.text-muted {
+  color: #4a3f35;
+}
+
+.border-strong {
+  border-color: rgba(90, 58, 36, 0.25);
+}
+
 .grain-noise {
   background-image: repeating-linear-gradient(
     90deg,
